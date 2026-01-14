@@ -1,4 +1,4 @@
-# Purpose of this code for move different pod to the same node which previous pod locaded.
+# Purpose of this code for move different pod to the same node which previous pod locaded. AntiAffinity: pod will not go to the same node.
 apiVersion: v1
 kind: Pod
 metadata:
@@ -37,7 +37,7 @@ metadata:
   name: pod-3
 spec:
   affinity:
-    podAffinity:
+    podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
