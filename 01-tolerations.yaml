@@ -6,6 +6,8 @@ spec:
   containers:
   - name: nginx
     image: nginx 
+  nodeSelector: 
+    disktype: ssd 
   tolerations:
   - key: "hardware"
     operator: "Equal"
