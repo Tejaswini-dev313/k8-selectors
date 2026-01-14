@@ -36,7 +36,7 @@ metadata:
   name: pod-3
 spec:
   affinity:
-    podAntiAffinity:
+    podAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
