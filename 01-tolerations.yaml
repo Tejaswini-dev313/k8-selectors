@@ -7,7 +7,7 @@ spec:
   - name: nginx
     image: nginx 
   nodeSelector: 
-    disktype: ssd 
+    hardware: gcp  
   tolerations:
   - key: "hardware"
     operator: "Equal"
