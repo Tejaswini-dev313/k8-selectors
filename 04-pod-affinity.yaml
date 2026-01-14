@@ -1,3 +1,4 @@
+# Purpose of this code for move different pod to the same node which previous pod locaded.
 apiVersion: v1
 kind: Pod
 metadata:
